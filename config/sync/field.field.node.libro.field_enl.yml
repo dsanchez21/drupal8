@@ -1,0 +1,23 @@
+uuid: 6ad531a7-191e-48a1-ae66-29d0d8a3e24b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enl
+    - node.type.libro
+  module:
+    - link
+id: node.libro.field_enl
+field_name: field_enl
+entity_type: node
+bundle: libro
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

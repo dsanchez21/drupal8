@@ -1,0 +1,10 @@
+uuid: 3db60294-c469-4efd-9cc0-86011114979b
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.libro_full
+label: 'Libro full'
+targetEntityType: media
+cache: true

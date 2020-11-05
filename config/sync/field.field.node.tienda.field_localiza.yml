@@ -1,0 +1,22 @@
+uuid: 2ef80043-e052-4e65-b835-5e5a846d0900
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localiza
+    - node.type.tienda
+  module:
+    - geofield
+id: node.tienda.field_localiza
+field_name: field_localiza
+entity_type: node
+bundle: tienda
+label: Localizacion
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

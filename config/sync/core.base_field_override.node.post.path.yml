@@ -1,0 +1,20 @@
+uuid: d625f785-eb1c-4478-abad-84774a7b7f93
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.post
+  module:
+    - path
+id: node.post.path
+field_name: path
+entity_type: node
+bundle: post
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,33 @@
+uuid: ffe2f224-372a-4d2b-a2be-16ec8113a831
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cabecera
+    - field.field.block_content.cabecera.body
+    - field.field.block_content.cabecera.field_img
+    - image.style.cabecera
+  module:
+    - image
+id: block_content.cabecera.default
+targetEntityType: block_content
+bundle: cabecera
+mode: default
+content:
+  field_img:
+    weight: 1
+    label: above
+    settings:
+      image_style: cabecera
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  titulo_default:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

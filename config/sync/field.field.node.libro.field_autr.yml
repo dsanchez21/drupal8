@@ -1,0 +1,19 @@
+uuid: 716ed0d5-6bb9-4c23-879e-6c2dfd8b9938
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autr
+    - node.type.libro
+id: node.libro.field_autr
+field_name: field_autr
+entity_type: node
+bundle: libro
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

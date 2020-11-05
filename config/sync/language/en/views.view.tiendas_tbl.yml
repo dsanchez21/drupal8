@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      filters:
+        field_pais_target_id:
+          group_info:
+            description: ''
+  page_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p><a class=\"btn btn-danger\" href=\"/en/node/add/tienda\">Nueva tienda EN</a></p>\r\n"
+            format: full_html
+        area_1:
+          content:
+            value: "<p><a class=\"btn btn-danger\" href=\"/en/exportaciones\">Guardar CSV EN</a></p>\r\n"
+            format: full_html
+  rest_export_1:
+    display_options:
+      filters:
+        field_pais_target_id:
+          group_info:
+            description: ''
+label: 'tiendas EN'

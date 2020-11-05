@@ -1,0 +1,18 @@
+uuid: b41ca2dd-2ee2-48a5-8222-c904f6b9776c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cabecera
+id: block_content.cabecera.info
+field_name: info
+entity_type: block_content
+bundle: cabecera
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

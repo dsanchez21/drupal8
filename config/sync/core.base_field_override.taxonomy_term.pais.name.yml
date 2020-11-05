@@ -1,0 +1,18 @@
+uuid: 49d76e18-b384-4b70-97c2-838b22bb93b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pais
+id: taxonomy_term.pais.name
+field_name: name
+entity_type: taxonomy_term
+bundle: pais
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

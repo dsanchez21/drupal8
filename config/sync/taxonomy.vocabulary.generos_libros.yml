@@ -1,0 +1,8 @@
+uuid: 02bfa3a0-3018-4ff3-a3b2-b1d9d902cb09
+langcode: es
+status: true
+dependencies: {  }
+name: 'Generos libros'
+vid: generos_libros
+description: ''
+weight: 0

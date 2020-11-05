@@ -1,0 +1,9 @@
+uuid: f709bbd0-adc8-41c3-a106-2467128b24f4
+langcode: es
+status: true
+dependencies: {  }
+id: fr-ma
+label: 'Frances, Marruecos'
+direction: ltr
+weight: 4
+locked: false

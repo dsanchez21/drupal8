@@ -1,0 +1,20 @@
+uuid: 7d7672bc-5284-413b-8fa2-1050bd4ff231
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_etiquetas
+field_name: field_etiquetas
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

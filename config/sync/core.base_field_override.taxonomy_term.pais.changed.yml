@@ -1,0 +1,18 @@
+uuid: d2e829a9-41a1-4025-a462-1508a4f5fbee
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pais
+id: taxonomy_term.pais.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: pais
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

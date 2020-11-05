@@ -1,0 +1,22 @@
+uuid: 840f090f-9b5c-4ba7-870e-675d8c33775c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.recetas
+id: node.recetas.status
+field_name: status
+entity_type: node
+bundle: recetas
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 943ba7ee-9dcf-4b7e-944a-661a8943bbe7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.post
+id: node.post.promote
+field_name: promote
+entity_type: node
+bundle: post
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

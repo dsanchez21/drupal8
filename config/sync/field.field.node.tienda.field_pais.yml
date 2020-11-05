@@ -1,0 +1,29 @@
+uuid: 0c346172-9f2e-495c-8e36-1c3678ee39cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais
+    - node.type.tienda
+    - taxonomy.vocabulary.pais
+id: node.tienda.field_pais
+field_name: field_pais
+entity_type: node
+bundle: tienda
+label: Pais
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pais: pais
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

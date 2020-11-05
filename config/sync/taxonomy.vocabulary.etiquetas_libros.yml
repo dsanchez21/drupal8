@@ -1,0 +1,8 @@
+uuid: dea5205c-743a-4907-93bf-1959c7ab9176
+langcode: es
+status: true
+dependencies: {  }
+name: 'Etiquetas libros'
+vid: etiquetas_libros
+description: ''
+weight: 0

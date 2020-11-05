@@ -1,0 +1,529 @@
+uuid: 57d7eda7-41fe-4f6b-817f-789e78a49a45
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.libro.body
+    - field.field.node.libro.field_autr
+    - field.field.node.libro.field_enl
+    - field.field.node.libro.field_etiquetas
+    - field.field.node.libro.field_fecha_de_publicacion
+    - field.field.node.libro.field_genero
+    - field.field.node.libro.field_ima
+    - field.field.node.libro.field_subt
+    - node.type.libro
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+          icon_map:
+            layout:
+              wrapper: 0
+              layout: 0
+            rows:
+              - 0
+            regions:
+              first: 0
+              second: 0
+          icon_map_settings:
+            layout:
+              wrapper:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+              layout:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+            rows:
+              -
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: ''
+            regions:
+              first:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+              second:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+        components:
+          5f6be56a-af27-43c1-abc5-b15c62606b0d:
+            uuid: 5f6be56a-af27-43c1-abc5-b15c62606b0d
+            region: first
+            configuration:
+              id: 'field_block:node:libro:field_ima'
+              label: Imagen
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: libro_full
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          612c5ac4-741f-4599-b3f6-19a3fba8c523:
+            uuid: 612c5ac4-741f-4599-b3f6-19a3fba8c523
+            region: second
+            configuration:
+              id: 'field_block:node:libro:field_fecha_de_publicacion'
+              label: 'Fecha de publicacion'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: short
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          b3181a8e-fc50-4f2f-9987-d4e4531c3b22:
+            uuid: b3181a8e-fc50-4f2f-9987-d4e4531c3b22
+            region: second
+            configuration:
+              id: 'field_block:node:libro:field_autr'
+              label: Autor
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          08b5a18b-c281-4065-9a89-9063a3cd29fc:
+            uuid: 08b5a18b-c281-4065-9a89-9063a3cd29fc
+            region: second
+            configuration:
+              id: 'field_block:node:libro:field_genero'
+              label: Genero
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          179187db-f831-48db-91f5-2e31af331983:
+            uuid: 179187db-f831-48db-91f5-2e31af331983
+            region: second
+            configuration:
+              id: 'field_block:node:libro:field_enl'
+              label: Enlace
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 200
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 7
+          8d4bd3a6-5f0e-4400-b2a3-189caf0b54ec:
+            uuid: 8d4bd3a6-5f0e-4400-b2a3-189caf0b54ec
+            region: second
+            configuration:
+              id: 'field_block:node:libro:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 6
+          09536f8d-e805-4a71-87b1-73e6c26cb376:
+            uuid: 09536f8d-e805-4a71-87b1-73e6c26cb376
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:libro:titulo_teaser'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          icon_map:
+            layout:
+              wrapper: 0
+              layout: 0
+            rows:
+              - 0
+            regions:
+              content: 0
+          icon_map_settings:
+            layout:
+              wrapper:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+              layout:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+            rows:
+              -
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: ''
+            regions:
+              content:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+        components:
+          46f14f93-fecb-43c8-b176-7a18297bdc83:
+            uuid: 46f14f93-fecb-43c8-b176-7a18297bdc83
+            region: content
+            configuration:
+              id: 'field_block:node:libro:field_subt'
+              label: Subtitulo
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          3c451de6-bafc-4de7-9baf-67ae228b75e9:
+            uuid: 3c451de6-bafc-4de7-9baf-67ae228b75e9
+            region: content
+            configuration:
+              id: 'field_block:node:libro:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          d947312c-ee02-416b-bec9-55d5d987e6fd:
+            uuid: d947312c-ee02-416b-bec9-55d5d987e6fd
+            region: content
+            configuration:
+              id: 'field_block:node:libro:field_etiquetas'
+              label: Etiquetas
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.libro.full
+targetEntityType: node
+bundle: libro
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autr:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_enl:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_etiquetas:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fecha_de_publicacion:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_genero:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ima:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_subt:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: cef306b3-aef4-427f-82f7-f414ab25cee5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria
+  module:
+    - path
+id: taxonomy_term.categoria.path
+field_name: path
+entity_type: taxonomy_term
+bundle: categoria
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

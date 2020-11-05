@@ -1,0 +1,23 @@
+uuid: 963a1cd1-9e4a-499f-859d-2e4ceb5be46f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cabecera
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.cabecera.body
+field_name: body
+entity_type: block_content
+bundle: cabecera
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,16 @@
+uuid: a9dc6619-22d8-4d3d-9b8f-edfc3cd9bb4c
+langcode: es
+status: true
+dependencies: {  }
+id: node.libro.display.teaser.titulo
+label: Titulo
+field_name: titulo
+entity_type: node
+bundle: libro
+context: display
+mode: teaser
+plugin: entity_label
+weight: null
+settings:
+  wrapper: h1
+  class: ''

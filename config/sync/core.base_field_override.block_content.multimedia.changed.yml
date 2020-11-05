@@ -1,0 +1,18 @@
+uuid: ee05c221-e8d9-4362-9cc0-1d90fd03d7f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.multimedia
+id: block_content.multimedia.changed
+field_name: changed
+entity_type: block_content
+bundle: multimedia
+label: Modificado
+description: 'La fecha en la que el bloque personalizado se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
